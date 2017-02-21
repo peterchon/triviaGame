@@ -1,0 +1,89 @@
+html,
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.container > div {
+    margin-top: 50px;
+    animation-name: fade-in;
+    animation-iteration-count: 1;
+    animation-duration: 600ms;
+}
+
+.container p {
+    color: #999;
+    text-align: right;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #ccc;
+}
+
+.container p:before {
+    content: "Seconds Left:";
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.container h1 {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.container ul,
+.container li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.container button,
+.container li {
+    cursor: pointer;
+    margin: 10px 0 0;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 300ms;
+}
+
+.container li:hover {
+    background-color: lightyellow;
+}
+
+.container button {
+    outline: none;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+    background-image: linear-gradient(#eee, #ddd);
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        margin-top: 40px;
+    }
+    to {
+        opacity: 1;
+        margin-top: 50px;
+    }
+}
+
+@-webkit-keyframes fade-in {
+    from {
+        opacity: 0;
+        margin-top: 40px;
+    }
+    to {
+        opacity: 1;
+        margin-top: 50px;
+    }
+}
